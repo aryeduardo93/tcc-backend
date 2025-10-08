@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: tcc-backend
+    env: java
+    plan: free
+    buildCommand: ./gradlew build -x test
+    startCommand: java -jar build/libs/*.jar
