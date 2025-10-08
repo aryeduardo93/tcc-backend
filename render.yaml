@@ -1,7 +1,7 @@
 services:
   - type: web
     name: tcc-backend
-    env: docker
+    env: java
     plan: free
-    branch: main
-    repo: https://github.com/aryeduardo93/tcc-backend
+    buildCommand: ./gradlew build -x test
+    startCommand: java -jar build/libs/*SNAPSHOT.jar
