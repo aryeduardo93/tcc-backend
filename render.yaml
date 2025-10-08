@@ -3,6 +3,5 @@ services:
     name: tcc-backend
     env: docker
     plan: free
-    buildCommand: ./gradlew build -x test
-    startCommand: java -jar build/libs/*.jar
-    dockerfilePath: ./Dockerfile
+    branch: main
+    repo: https://github.com/aryeduardo93/tcc-backend
