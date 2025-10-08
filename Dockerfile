@@ -17,4 +17,5 @@ RUN ./gradlew build -x test
 EXPOSE 8080
 
 # Comando para rodar o .jar
-CMD ["java", "-jar", "build/libs/*.jar"]
+CMD ["java", "-jar", "build/libs/nomedoseuarquivo.jar"]
+
